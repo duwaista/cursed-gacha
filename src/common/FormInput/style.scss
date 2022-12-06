@@ -1,0 +1,14 @@
+.form-input {
+  min-height: 2.5rem;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  border: rgba(172, 172, 172, 0.1) 1px solid;
+  font-size: 0.9rem;
+  text-indent: 10px;
+
+  &:enabled {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
