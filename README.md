@@ -1,1 +1,3 @@
-# react-18-style
+# cursed-gacha
+
+## Проклятие гачи воплоти
