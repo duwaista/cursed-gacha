@@ -1,9 +1,11 @@
+import * as webpack from "webpack";
+import 'webpack-dev-server';
 import path from 'path';
 import HtmlWebPackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import DotEnv from "dotenv-webpack";
 
-const config = {
+const config: webpack.Configuration = {
   plugins: [
     new HtmlWebPackPlugin({
       template: './public/index.html',
@@ -39,7 +41,7 @@ const config = {
         loader: 'file-loader',
         options: {
           outputPath: 'images',
-          name(resourcePath, resourceQuery) {
+          name() {
             if (process.env.NODE_ENV === 'development') {
               return '[path][name].[ext]';
             }
